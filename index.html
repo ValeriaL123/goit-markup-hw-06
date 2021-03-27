@@ -560,10 +560,13 @@
 
   <b class="action-form">Подпишитесь на рассылку</b>
 
-  <form action="" class="form">
+  <form action="" method="POST" class="form">
  
    <input type="text" placeholder="Email" class="email-form">
    <button type="submit" class="form-btn">Подписаться 
+     <svg class="icon-telegram" width="24px" height="24px">
+     <use href="./img/svg-sprite.svg#icon-telegram"></use>
+   </svg>
     
    </button>
  
@@ -580,12 +583,62 @@
  <div class="backdrop is-hidden" data-modal>
 
   <div class="modal">
-    <button type="button" data-modal-close> 
+    <button type="button"  class="modal-close" data-modal-close> 
 
-      <svg class="modal-close" width="30px" height="30px">
+      <svg width="18px" height="18px" class="modal-close-btn">
         <use href="./img/svg-sprite.svg#modal-close"></use>
       </svg>
     </button>
+
+    <!-- /////Форма Модалки -->
+
+
+  
+
+    <div class="wrapper-modal-form">
+      <h3 class="title-modal-form">Оставьте свои данные, мы вам перезвоним</h3>
+
+      <form action="" method="POST" class="form-modal">
+        
+
+        <label for="user-name" class="user-name-form">Имя</label>
+       <input type="text" class="form-user" name="user-name" id="user-name" minlength="2">
+
+        <label for="user-tel" class="user-name-form">Телефон</label>
+       <input type="tel" class="form-user" name="user-tel" id="user-tel">
+
+       
+
+       <label for="user-name" class="user-name-form">Почта</label>
+       <input type="email" class="form-user" name="user-email" id="user-email">
+
+       <label for="user-comment" class="user-name-form">Комментарий</label>
+       <textarea name="user-comment" id="user-comment"   class="user-comment" placeholder="Введите текст"></textarea>
+
+
+       
+        <input type="checkbox" name="user-confirm" id="user-confirm">
+      <p class="i-confirm">Соглашаюсь с рассылкой и принимаю <a href="" class="link">Условия договора</a> </p>
+
+
+
+       <button type="submit" class="btn-form-submit">Отправить</button>
+       
+
+
+      </form>
+
+
+   
+
+  </div>
+
+    <!-- /////// -->
+
+
+
+  
+    
   </div>
   
 </div>
