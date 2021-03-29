@@ -595,57 +595,69 @@
 
   
 
-    <div class="wrapper-modal-form">
-      <h3 class="title-modal-form">Оставьте свои данные, мы вам перезвоним</h3>
+    
+      <b class="title-modal-form">Оставьте свои данные, мы вам перезвоним</b>
 
       <form action="" method="POST" class="form-modal">
         
 
         <label for="user-name" class="user-name-form">Имя</label>
-       <input type="text" class="form-user" name="user-name" id="user-name" minlength="2">
 
-        <label for="user-tel" class="user-name-form">Телефон</label>
-       <input type="tel" class="form-user" name="user-tel" id="user-tel">
+        <div class="icon-form-wrapper">
+        <input type="text" class="form-user" name="user-name" id="user-name" minlength="2" required>
+        <svg class="icon-form" width="18px" height="18px">
+          <use href="./img/svg-sprite.svg#icon-name-user-form" ></use>
+        </svg>
+
+      </div>
+
+      <label for="user-tel" class="user-name-form">Телефон</label>
+
+        <div class="icon-form-wrapper">
+       <input type="tel" class="form-user" name="user-tel" id="user-tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+       <svg class="icon-form" width="18px" height="18px">
+        <use href="./img/svg-sprite.svg#icon-tel-form"></use>
+      </svg>
+
+      </div>
 
        
+      <label for="user-email" class="user-name-form">Почта</label>
 
-       <label for="user-name" class="user-name-form">Почта</label>
-       <input type="email" class="form-user" name="user-email" id="user-email">
+      <div class="icon-form-wrapper">
 
-       <label for="user-comment" class="user-name-form">Комментарий</label>
-       <textarea name="user-comment" id="user-comment"   class="user-comment" placeholder="Введите текст"></textarea>
+       <input type="email" class="form-user" name="user-email" id="user-email" required>
+       <svg class="icon-form" width="18px" height="18px">
+        <use href="./img/svg-sprite.svg#icon-email-form"></use>
+      </svg>
+
+      </div>
 
 
+      <label for="user-comment" class="user-name-form">Комментарий</label>
+       <textarea name="user-comment" id="user-comment" class="user-comment" placeholder="Введите текст"></textarea>
+
+      
+       <div class="confirm-wrapper">
        
         <input type="checkbox" name="user-confirm" id="user-confirm">
-      <p class="i-confirm">Соглашаюсь с рассылкой и принимаю <a href="" class="link">Условия договора</a> </p>
+        <label class="i-confirm">Соглашаюсь с рассылкой и принимаю 
+          <a href="" class="link">Условия договора</a> 
+        </label>
 
+        </div>
 
-
-       <button type="submit" class="btn-form-submit">Отправить</button>
+   <button type="submit" class="btn-form-submit">Отправить</button>
        
-
-
       </form>
-
-
-   
-
   </div>
-
-    <!-- /////// -->
-
-
-
-  
-    
   </div>
   
-</div>
+
   
     <!-- ////////// -->
   
-  <script src="./js/modal.js"></script>
+  <!-- <script src="./js/modal.js"></script> -->
 
 
 
