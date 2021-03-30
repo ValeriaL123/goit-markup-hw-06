@@ -1104,7 +1104,7 @@ padding: 20px 24px;
   display: inline-block;
   width: 16px;
   height: 15px;
-  border:1px solid #212121;;
+  border:1px solid #212121;
   border-radius: 2px;
   margin-right: 7px;
   cursor: pointer;
@@ -1132,6 +1132,10 @@ background-image: url(../img/vector.svg);
 background-position:center;
 background-repeat: no-repeat;
 
+}
+
+.user-agreement:focus + .agreement::before{
+  border:1px solid var(--accent-color);
 }
 
 
