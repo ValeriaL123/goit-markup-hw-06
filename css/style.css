@@ -156,8 +156,10 @@ margin-left: auto;
 
 }
 .link.contact{
-padding-top: 32px;
-padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
 }
 
@@ -166,12 +168,16 @@ padding-bottom: 32px;
   margin-right: 50px;
 }
 
+
+
 .contact-icon-envelope{
-width: 16px;
-height: 12px;
-fill:  #757575;
-margin-right: 10px;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  fill:  #757575;
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -518,7 +524,7 @@ text-align: center;
 /* <!-- ///////// Постоянные клиенты --> */
 .clients{
   padding: 94px 94px;
- background-color: #fff;
+  background-color: #fff;
 }
 
 .clients-title{
@@ -536,8 +542,13 @@ margin-bottom: 50px;
 .clients-list{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
 }
+
+.clients-list-item:not(:last-child){
+  margin-right: 30px;
+}
+
 
 .clients-list-link{
 display: flex;
@@ -616,8 +627,7 @@ display: inline-block;
 /* //////СОЦ СЕТИ  */
 .footer-wrap-list{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
 }
 
 .footer-wrap-item:not(:last-child){
